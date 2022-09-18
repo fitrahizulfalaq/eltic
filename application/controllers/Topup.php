@@ -180,8 +180,8 @@ class Topup extends CI_Controller
     public function check()
     {
        //Real
-		// $va           = '1179001231390340'; //get on iPaymu dashboard
-        // $secret       = '3A523EFD-6476-44B6-AE38-0AA82F94CEEA'; //get on iPaymu dashboard
+		$va           = '1179001231390340'; //get on iPaymu dashboard
+        $secret       = '3A523EFD-6476-44B6-AE38-0AA82F94CEEA'; //get on iPaymu dashboard
 
 		//sandbox
 		// $va = '0000001231390340';
