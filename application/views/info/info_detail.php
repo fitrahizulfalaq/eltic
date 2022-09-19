@@ -1,7 +1,7 @@
 <!-- App Header -->
 <div class="appHeader bg-info text-light">
 	<div class="left">
-		<a href="javascript:;" class="headerButton goBack">
+		<a href="<?=base_url("info")?>" class="headerButton goBack">
 			<ion-icon name="chevron-back-outline" role="img" class="md hydrated" aria-label="chevron back outline"></ion-icon>
 		</a>
 	</div>
