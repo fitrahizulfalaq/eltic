@@ -165,9 +165,7 @@ class Topup extends CI_Controller
             $ret = json_decode($ret);
             // test($ret->Data);
             if ($ret->Status == 200) {				
-				$this->topup_m->saveTrans($ret->Data);
-                $kalimat = "Terima kasih telah melakukan pemesanan. Silahkan lakukan pembayaran melalui *".$ret->Data->Url."\n\nSalam Hangat dari Kami, *ILTEC APPS* \nProvided by *Bikin Karya Creative Media* \n https://bikinkarya.com";
-				$this->fungsi->sendWA($this->session->hp,$kalimat);			
+				$this->topup_m->saveTrans($ret->Data);			
                 $sessionId  = $ret->Data->SessionID;
                 $url        =  $ret->Data->Url;
                 header('Location:' . $url);

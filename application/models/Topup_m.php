@@ -20,7 +20,12 @@ class Topup_m extends CI_Model
 		$data['url'] = $x->Url;
 		$data['SessionId'] = $x->SessionID;
 		$data['created'] = date("Ymdhmsi");
+		$kalimat = "Terima kasih telah melakukan pemesanan. Silahkan lakukan pembayaran melalui ".$x->Url."\n\nSalam Hangat dari Kami, *ILTEC APPS* \nProvided by *Bikin Karya Creative Media* \n https://bikinkarya.com";
+		$this->fungsi->sendWA($this->session->hp,$kalimat);
+
 		$this->db->insert('tb_transaksi', $data);
+
+
 	}
 
     function savePayment($url)

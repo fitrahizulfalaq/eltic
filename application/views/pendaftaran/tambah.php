@@ -141,7 +141,7 @@
 
 
 	<div class="form-button-group transparent">
-		<button type="submit" class="btn btn-primary btn-block btn-lg" onclick='alert("Proses pendaftaran")''>Register</button>
+		<button type="submit" class="btn btn-primary btn-block btn-lg"'>Register</button>
 	</div>
 
 	<?= form_close() ?>
