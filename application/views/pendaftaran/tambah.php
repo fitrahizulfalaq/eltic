@@ -109,7 +109,7 @@
 						<label class="label" for="kunci">Mendaftar Sebagai</label>
 						<select name="tipe_user" class="form-control custom-select" id="tipe">
 							<option value="1">Pelajar</option>
-							<option value="2">Guru</option>
+							<option value="1">Guru</option>
 						</select>
 					</div>
 				</div>
@@ -141,7 +141,7 @@
 
 
 	<div class="form-button-group transparent">
-		<button type="submit" class="btn btn-primary btn-block btn-lg">Register</button>
+		<button type="submit" class="btn btn-primary btn-block btn-lg" onclick="this.innerHTML('Proses Pendaftaran')">Register</button>
 	</div>
 
 	<?= form_close() ?>
