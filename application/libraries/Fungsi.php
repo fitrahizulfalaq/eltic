@@ -185,7 +185,7 @@ class Fungsi {
 		curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 0);
 		curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
 		curl_setopt($curl, CURLOPT_MAXREDIRS, 10);
-		curl_setopt($curl, CURLOPT_TIMEOUT, 45); // batas waktu response
+		curl_setopt($curl, CURLOPT_TIMEOUT, 35); // batas waktu response
 		curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
 		curl_setopt($curl, CURLOPT_POST, 1);
 

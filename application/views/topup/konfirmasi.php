@@ -28,7 +28,7 @@
 					<a href="<?=base_url("topup")?>" class="btn btn-secondary btn-lg btn-block"><ion-icon name="arrow-back-outline"></ion-icon> Batal</a>
 				</div>
 				<div class="col-6">
-					<a href="<?=base_url("topup/proses?coin=".$koin)?>" class="btn btn-success btn-lg btn-block" onclick="this.innerHTML('Proses'))"><ion-icon name="cash-outline"></ion-icon> Beli Koin</a>
+					<a href="<?=base_url("topup/proses?coin=".$koin)?>" class="btn btn-success btn-lg btn-block" onclick="this.innerHTML='Proses')"><ion-icon name="cash-outline"></ion-icon> Beli Koin</a>
 				</div>
 			</div>
 		</div>
