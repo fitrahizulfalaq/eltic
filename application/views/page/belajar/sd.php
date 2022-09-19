@@ -5,7 +5,7 @@
 			<ion-icon name="chevron-back-outline" role="img" class="md hydrated" aria-label="chevron back outline"></ion-icon>
 		</a>
 	</div>
-    <div class="pageTitle">Pulih Kelas SD</div>	
+    <div class="pageTitle">Pilih Kelas SD</div>	
 </div>
 <!-- * App Header -->
 

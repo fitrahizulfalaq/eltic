@@ -80,7 +80,7 @@ class Pendaftaran extends CI_Controller
 			if ($this->db->affected_rows() > 0) {
 				$this->session->set_flashdata('success', 'Pendaftaran Berhasil, lengkapi profil setelah login menggunakan email yang telah anda daftarkan');
 
-				$kalimat = "Terima kasih, *".$post['nama']."*. Anda telah melakukan pendaftaran. \n \n"."Berikut Informasi akun anda : \nEmail : ".$post['email']."\nPassword : ".$post['password']."\n \nSelamat menjelajah.\nSalam Hangat dari Kami, *ELTIC APPS* \nProvided by *Bikin Karya Creative Media* \n https://bikinkarya.com";
+				$kalimat = "Terima kasih, *".$post['nama']."*. Anda telah melakukan pendaftaran. \n \n"."Berikut Informasi akun anda : \nEmail : ".$post['email']."\nPassword : ******\n \nSelamat menjelajah.\nSalam Hangat dari Kami, *ILTEC APPS* \nProvided by *Bikin Karya Creative Media* \n https://bikinkarya.com";
 					$this->fungsi->sendWA($post['hp'],$kalimat);
 			}
 			redirect('pendaftaran/tambah');

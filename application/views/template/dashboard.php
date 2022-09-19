@@ -7,8 +7,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#6C388A">
-    <title>Eltic Apps | BIKINKARYA CREATIVE MEDIA</title>
-    <meta name="description" content="ELTIC APPS | BIKINKARYA CREATIVE MEDIA">
+    <title>ILTEC Apps | BIKINKARYA CREATIVE MEDIA</title>
+    <meta name="description" content="ILTEC APPS | BIKINKARYA CREATIVE MEDIA">
     <meta name="keywords" content="BIKINKARYA CREATIVE MEDIA" />
     <link rel="icon" type="image/png" href="<?=base_url()?>/assets/img/favicon.png" sizes="32x32">
     <link rel="apple-touch-icon" sizes="180x180" href="<?=base_url()?>/assets/img/icon/192x192.png">
@@ -33,7 +33,7 @@
         </div>
         <div class="pageTitle">
             <!-- <img src="<?=base_url()?>/assets/img/logo.png" alt="logo" class="logo"> -->
-            ELTIC APPS
+            ILTEC APPS
         </div>
         <div class="right">
             <a href="<?= base_url("auth/logout")?>" class="headerButton">

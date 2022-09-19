@@ -97,7 +97,7 @@ class Topup_m extends CI_Model
 
 	function sendNotifyBuyProduct($nama = null, $harga = null, $keperluan = null)
 	{
-		$kalimat = "*Terima kasih*, ".$nama.". \n Anda telah melakukan ".$keperluan." sebanyak ".$harga.". \n Sisa saldo poin kamu sebanyak ".$this->fungsi->getSaldo($this->session->id).". \n \n Salam hangat dari kami, *ELTIC APPS* \n Provided by *Bikinkarya Creative Media* \n https://bikinkarya.com.";
+		$kalimat = "*Terima kasih*, ".$nama.". \n Anda telah melakukan ".$keperluan." sebanyak ".$harga.". \n Sisa saldo poin kamu sebanyak ".$this->fungsi->getSaldo($this->session->id).". \n \n Salam hangat dari kami, *ILTEC APPS* \n Provided by *Bikinkarya Creative Media* \n https://bikinkarya.com.";
 		
 		$this->fungsi->sendWA($this->session->hp,$kalimat);
 

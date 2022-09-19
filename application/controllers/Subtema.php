@@ -34,7 +34,7 @@ class Subtema extends CI_Controller
 		$data['keterangan'] = $this->tema_m->get($id)->row('deskripsi');
 		$data['tema'] = $this->tema_m->get($id)->row('id');
 		$data['kelas'] = $this->tema_m->get($id)->row('kelas');
-		$data['menu'] = "List Subtema Kelas ".$data['kelas'];
+		$data['menu'] = "List Topik Kelas ".$data['kelas'];
 		$this->templateadmin->load('template/kosongan', 'subtema/list', $data);
 	}
 
@@ -85,7 +85,7 @@ class Subtema extends CI_Controller
 			$this->subtema_m->simpan($post);
 
 			if ($this->db->affected_rows() > 0) {
-				$this->session->set_flashdata('success', 'SubTema berhasil ditambahkan');
+				$this->session->set_flashdata('success', 'Topik berhasil ditambahkan');
 			}
 			redirect('subtema/list/' . $post['tema_id']);
 		}

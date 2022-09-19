@@ -29,7 +29,7 @@
     <div id="appCapsule" class="pt-0">
         <div class="login-form mt-1">
             <div class="section">
-                <img src="<?= base_url() ?>/assets/img/sample/photo/vector4.png" alt="image" class="form-image">
+                <img src="<?= base_url() ?>/assets/img/logo.jpg" alt="image" class="form-image">
             </div>
             <div class="section mt-1">
                 <h1>Halaman Login</h1>
