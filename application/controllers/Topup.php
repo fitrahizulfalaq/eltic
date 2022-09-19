@@ -251,7 +251,7 @@ class Topup extends CI_Controller
                     }
                     redirect("dashboard");
                 } else {
-                    $this->session->set_flashdata('warning', 'Silahkan Lanjutkan Pembayaran');
+                    $this->session->set_flashdata('warning', 'Silahkan Lanjutkan Pembayaran. Anda bisa Top Up kembali setelah menunggu 1 jam proses pembayaran.');
                     redirect("dashboard");
                 }				
             } else {
