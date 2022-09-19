@@ -3,7 +3,7 @@
 	<div class="wide-block pt-2 pb-2">
 		<h1>Selamat Datang</h1>
 		<h3><?= $this->session->nama ?></h3>
-        <h4>Anda login sebagai : <?= $this->fungsi->status($this->session->tipe_user) ?> | <ion-icon name="wallet-outline"></ion-icon> Poin Anda : <?= $this->fungsi->getSaldo($this->session->id) ?></h4>
+        <h4>Login sebagai : <?= $this->fungsi->status($this->session->tipe_user) ?> | <ion-icon name="wallet-outline"></ion-icon> Poin Anda : <?= $this->fungsi->getSaldo($this->session->id) ?></h4>
 	</div>
 </div>
 <div class="section full mt-2">
