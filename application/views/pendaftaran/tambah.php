@@ -141,7 +141,7 @@
 
 
 	<div class="form-button-group transparent">
-		<button type="submit" class="btn btn-primary btn-block btn-lg" onclick="this.value='Proses Pendaftaran'">Register</button>
+		<button type="submit" class="btn btn-primary btn-block btn-lg" onclick='this.value="Proses Pendaftaran"''>Register</button>
 	</div>
 
 	<?= form_close() ?>
