@@ -107,9 +107,9 @@
 				<div class="form-group basic">
 					<div class="input-wrapper">
 						<label class="label" for="kunci">Mendaftar Sebagai</label>
-						<select name="tipe_user" onchange="ShowSyaratRelawan(this.value)" class="form-control custom-select" id="tipe">
+						<select name="tipe_user" class="form-control custom-select" id="tipe">
 							<option value="1">Pelajar</option>
-							<option value="2">Relawan</option>
+							<option value="2">Guru</option>
 						</select>
 					</div>
 				</div>
