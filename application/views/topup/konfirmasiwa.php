@@ -1,6 +1,7 @@
 <div id="appCapsule">
 
 	<div class="section mt-2">
+	<?php $this->view('message'); ?>
 		<div class="card">
 			<div class="card-body">
 				<div class="p-1">
