@@ -291,5 +291,43 @@ class Topup extends CI_Controller
     {
         $this->fungsi->sendWA("081231390341","Testing","dashboard");
     }
+
+    public function konfirmasiWA()
+	{	
+		$tipe_user = $this->session->tipe_user;		
+		if ($tipe_user < 2) {
+			$this->session->set_flashdata('danger','Hanya relawan yang bisa menambahkan data');
+            redirect();
+		}
+		
+		//Load librarynya dulu
+		$this->load->library('form_validation');
+		//Atur validasinya
+		$this->form_validation->set_rules('nama', 'nama', 'min_length[3]|max_length[50]');
+		$this->form_validation->set_rules('hp', 'hp', 'min_length[11]|max_length[15]');
+
+		//Pesan yang ditampilkan
+		$this->form_validation->set_message('min_length', '{field} Setidaknya  minimal {param} karakter.');
+		$this->form_validation->set_message('max_length', '{field} Seharusnya maksimal {param} karakter.');
+		$this->form_validation->set_message('is_unique', 'Data sudah ada');
+		$this->form_validation->set_message('alpha_dash', 'Gak Boleh pakai Spasi');
+		//Tampilan pesan error
+		$this->form_validation->set_error_delimiters('<span class="badge badge-danger">', '</span>');
+
+		if ($this->form_validation->run() == FALSE) {
+			$data['menu'] = "Konfirmasi WA";
+			$this->templateadmin->load('template/tanpa-buttom','topup/konfirmasiwa',$data);
+	    } else {
+	        $post = $this->input->post(null, TRUE);	        
+            
+            $kalimat = "Terima kasih ".$post['nama']." telah melakukan pemesanan";
+            $this->fungsi->sendWA($post['hp'],$kalimat);
+
+	        if ($this->db->affected_rows() > 0) {
+	        	$this->session->set_flashdata('success','Berhasil Di WA');
+	        }	
+	        redirect("topup/konfirmasiwa");	        	
+	    }
+	}
 }
 
