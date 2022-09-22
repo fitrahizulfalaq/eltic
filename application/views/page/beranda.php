@@ -3,7 +3,7 @@
 	<div class="wide-block pt-2 pb-2">
 		<h1>Selamat Datang</h1>
 		<h3><?= $this->session->nama ?></h3>
-        <h4>Login sebagai : <?= $this->fungsi->status($this->session->tipe_user) ?> | <ion-icon name="wallet-outline"></ion-icon> Poin Anda : <?= $this->fungsi->getSaldo($this->session->id) ?></h4>
+        <h4>Login sebagai : <?= $this->fungsi->status($this->session->tipe_user) ?> <?php if ($this->session->tipe_user < 2) { ?> |  <ion-icon name="wallet-outline"></ion-icon> Poin Anda : <?= $this->fungsi->getSaldo($this->session->id) ?><?php } ?></h4>
 	</div>
 </div>
 <div class="section full mt-2">
@@ -24,7 +24,7 @@
 				<div class="card">
 					<a href="<?=base_url("info")?>">
 					<div class="card-body text-center text-info">
-						<ion-icon name="person-circle-outline" class="iconedbox iconedbox-xl"></ion-icon>	
+						<ion-icon name="newspaper-outline" class="iconedbox iconedbox-xl"></ion-icon>	
 						<h3 class="text-gray">Info</h3>
 					</div>
 					</a>
@@ -34,6 +34,7 @@
 	</div>
 	<div class="wide-block pt-2 pb-2 border-0">
 		<div class="row">
+			<?php if ($this->session->tipe_user < 2) { ?>
 			<div class="col-6">
 				<div class="card">
 					<a href="<?=base_url("topup")?>">
@@ -44,6 +45,19 @@
 					</a>
 				</div>
 			</div>
+			<?php } ?>
+			<?php if ($this->session->tipe_user >= 2) { ?>
+			<div class="col-6">
+				<div class="card">
+					<a href="<?=base_url("pendaftaran/dataAll")?>">
+					<div class="card-body text-center text-info">
+						<ion-icon name="person-circle-outline" class="iconedbox iconedbox-xl"></ion-icon>	
+						<h3 class="text-gray">Pengguna</h3>
+					</div>
+					</a>
+				</div>
+			</div>
+			<?php } ?>
 			<div class="col-6">
 				<div class="card">
 					<a href="<?=base_url("page/petunjuk")?>">

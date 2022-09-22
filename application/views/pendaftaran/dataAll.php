@@ -17,7 +17,7 @@
                         <?php foreach ($row->result() as $key => $data) {; ?>
                             <tr>
                                 <td>
-                                    <span class="badge badge-primary"><?= $data->tipe_user == "2" ? "relawan" : "pelajar" ?></span> <?= $data->nama ?><br>
+                                <span class="badge badge-primary"><?= $data->tipe_user == "2" ? "admin" : "guru/pelajar" ?></span> <?= $data->nama ?><br>
                                 </td>                               
                             </tr>
                         <?php } ?>

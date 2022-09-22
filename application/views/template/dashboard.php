@@ -25,7 +25,7 @@
     <!-- * loader -->
 
     <!-- App Header -->
-    <div class="appHeader bg-info text-light">
+    <div class="appHeader bg-primary text-light">
         <div class="left">
             <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarPanel">
                 <ion-icon name="menu-outline"></ion-icon>
@@ -46,7 +46,7 @@
     <?= $contents ?>
 
     <!-- App Bottom Menu -->
-    <div class="appBottomMenu bg-info text-light">
+    <div class="appBottomMenu bg-primary text-light">
         <a href="<?=base_url()?>" class="item active">
             <div class="col">
                 <ion-icon name="home-outline"></ion-icon>
@@ -57,11 +57,13 @@
                 <ion-icon name="book-outline"></ion-icon>
             </div>
         </a>
+        <?php if ($this->session->tipe_user == 1  ) { ?>
         <a href="<?=base_url("topup")?>" class="item">
             <div class="col">
                 <ion-icon name="cash-outline"></ion-icon>
             </div>
         </a>
+        <?php } ?>
         <a href="<?=base_url("info")?>" class="item">
             <div class="col">
                 <ion-icon name="information-circle-outline"></ion-icon>
@@ -81,7 +83,7 @@
             <div class="modal-content">
                 <div class="modal-body p-0">
                     <!-- profile box -->
-                    <div class="profileBox bg-info">
+                    <div class="profileBox bg-primary">
                         <div class="image-wrapper">
                             <img src="<?=base_url()?>/assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged rounded">
                         </div>
@@ -101,7 +103,7 @@
                     <ul class="listview flush transparent no-line image-listview mt-2">
                         <li>
                             <a href="<?=base_url()?>" class="item">
-                                <div class="icon-box bg-info">
+                                <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
                                 <div class="in">
@@ -111,7 +113,7 @@
                         </li>
                         <li>
                             <a href="<?= base_url("page/belajar")?>" class="item">
-                                <div class="icon-box bg-info">
+                                <div class="icon-box bg-primary">
                                     <ion-icon name="book-outline"></ion-icon>
                                 </div>
                                 <div class="in">
@@ -119,9 +121,10 @@
                                 </div>
                             </a>
                         </li>
+                        <?php if ($this->session->tipe_user == 1  ) { ?>
                         <li>
                             <a href="<?= base_url("topup")?>" class="item">
-                                <div class="icon-box bg-info">
+                                <div class="icon-box bg-primary">
                                     <ion-icon name="cash-outline"></ion-icon>
                                 </div>
                                 <div class="in">
@@ -129,9 +132,10 @@
                                 </div>
                             </a>
                         </li>
+                        <?php } ?>
                         <li>
                             <a href="<?=base_url("info")?>" class="item">
-                                <div class="icon-box bg-info">
+                                <div class="icon-box bg-primary">
                                     <ion-icon name="information-circle-outline"></ion-icon>
                                 </div>
                                 <div class="in">
@@ -141,7 +145,7 @@
                         </li>
                         <li>
                             <a href="<?=base_url("page/profil")?>" class="item">
-                                <div class="icon-box bg-info">
+                                <div class="icon-box bg-primary">
                                     <ion-icon name="person-circle-outline"></ion-icon>
                                 </div>
                                 <div class="in">
@@ -151,7 +155,7 @@
                         </li>
                         <li>
                             <div class="item">
-                                <div class="icon-box bg-info">
+                                <div class="icon-box bg-primary">
                                     <ion-icon name="moon-outline"></ion-icon>
                                 </div>
                                 <div class="in">

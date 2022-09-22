@@ -1,4 +1,4 @@
-<div class="appHeader bg-info text-light">
+<div class="appHeader bg-primary text-light">
 	<div class="left">
 		<a href="<?= base_url("subtema/list/" . $tema) ?>" class="headerButton goBack">
 			<ion-icon name="chevron-back-outline" role="img" class="md hydrated" aria-label="chevron back outline"></ion-icon>
@@ -30,7 +30,7 @@
 		<div class="wide-block pt-2 pb-2">
 			<h2>RPP dan Modul</h2>
 			<!-- <p>Basic modal example</p> -->
-			<?php if ($pembelian_rpp != null) { ?>
+			<?php if ($pembelian_rpp != null or $this->session->tipe_user >= 2) { ?>
 
 				<div class="accordion" id="accordionExample2">
 					<div class="item">
@@ -81,7 +81,7 @@
 				<h2>Perangkat Pembelajaran</h2>
 				<!-- <p>Basic modal example</p> -->
 
-				<?php if ($pembelian_perangkat != null) { ?>
+				<?php if ($pembelian_perangkat != null or $this->session->tipe_user >= 2) { ?>
 					<div class="accordion" id="accordionExample2">
 						<div class="item">
 							<div class="accordion-header">

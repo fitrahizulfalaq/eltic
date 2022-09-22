@@ -1,5 +1,5 @@
 <!-- App Header -->
-<div class="appHeader bg-info text-light">
+<div class="appHeader bg-primary text-light">
 	<div class="left">
 		<a href="<?=base_url("page/belajar")?>" class="headerButton goBack">
 			<ion-icon name="chevron-back-outline" role="img" class="md hydrated" aria-label="chevron back outline"></ion-icon>

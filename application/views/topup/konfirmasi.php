@@ -1,8 +1,8 @@
 <!-- App Capsule -->
 <div id="appCapsule">
 
-	<div class="error-page">
-        <ion-icon name="cash-outline" class="iconedbox iconedbox-l"></ion-icon>
+	<div class="adbox adbox-300-50">
+        <ion-icon name="cash-outline" class="iconedbox iconedbox-xl"></ion-icon>
 		<h1>Konfirmasi Pembayaran</h1>
 		<hr>
         <h2>Pembelian Koin Seharga Rp. <?= $harga ?></h2>

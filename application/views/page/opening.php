@@ -11,7 +11,9 @@
         <ion-icon name="person-circle-outline" class="iconedbox iconedbox-xl"></ion-icon>
 		<h1>Selamat Datang,</h1>
 		<h2><?= $this->session->nama ?></h2>
-        <h4>Poin Anda : <?= $this->fungsi->getSaldo($this->session->id) ?></h4>        
+		<?php if ($this->session->tipe_user == "1"  ) { ?>
+		<h4>Poin Anda : <?= $this->fungsi->getSaldo($this->session->id) ?></h4>        
+		<?php } ?>
 		<div class="text mb-5">
 			Selamat datang di Aplikasi ELTIC. <br> Anda bisa mempelajari banyak hal melalui beragam media.
 		</div>
