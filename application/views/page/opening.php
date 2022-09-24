@@ -23,7 +23,7 @@
 				<div class="col-6">
 					<a href="<?=base_url()?>" class="btn btn-primary btn-lg btn-block"><ion-icon name="home-outline"></ion-icon> Beranda</a>
 				</div>
-				<?php if ($this->session->tipe_user == "2"  ) { ?>
+				<?php if ($this->session->tipe_user < "2"  ) { ?>
 				<div class="col-6">
 					<a href="<?=base_url("topup")?>" class="btn btn-success btn-lg btn-block"><ion-icon name="cash-outline"></ion-icon> Beli Koin</a>
 				</div>
