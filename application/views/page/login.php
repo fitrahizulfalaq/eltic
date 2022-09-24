@@ -60,7 +60,7 @@
                         <div>
                             Belum Punya Akun? <a href="<?= base_url('pendaftaran/tambah') ?>">Daftar</a>
                         </div>
-                        <!-- <div><a href="page-forgot-password.html" class="text-muted">Forgot Password?</a></div> -->
+                        <!-- <div><a href="<?=base_url("pendaftaran/forget/")?>" class="text-muted">Forgot Password?</a></div> -->
                     </div>
 
                     <div class="form-button-group">

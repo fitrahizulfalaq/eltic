@@ -14,6 +14,14 @@ class Pendaftaran_m extends CI_Model
 		return $query;
 	}
 
+	public function getByPhone($hp = null)
+	{
+		$this->db->from('tb_user');
+		$this->db->where('hp', $hp);
+		$query = $this->db->get();
+		return $query;
+	}
+	
 	public function getNonActive($id = null)
 	{
 		$this->db->from('tb_user');
