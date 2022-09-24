@@ -126,7 +126,7 @@ class Pendaftaran extends CI_Controller
 
 		if ($this->form_validation->run() == FALSE) {
 			$data['menu'] = "Konfirmasi WA";
-			$this->templateadmin->load('template/tanpa-buttom','topup/konfirmasiwa',$data);
+			$this->templateadmin->load('template/tanpa-buttom','pendaftaran/forget',$data);
 	    } else {
 	        $post = $this->input->post(null, TRUE);	        
             
