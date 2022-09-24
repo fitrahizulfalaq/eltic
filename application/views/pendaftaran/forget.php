@@ -6,8 +6,8 @@
 			<div class="card-body">
 				<div class="p-1">
 					<div class="text-center">
-						<h2 class="text-primary">Konfirmasi WA</h2>
-						<p>Kirim Pesan Konfirmasi</p>
+						<h2 class="text-primary">Lupa Password</h2>
+						<p>Masukkan Nomor HP untuk Mengirimkan Identitas</p>
 					</div>
 					<?= form_open_multipart('') ?>
                     <div class="form-group basic animated">
