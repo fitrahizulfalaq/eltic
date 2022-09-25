@@ -142,4 +142,9 @@ class Pendaftaran extends CI_Controller
 			}        	
 	    }
 	}
+
+	function testCron()
+	{
+		$this->fungsi->sendWA("081234381239","Testing");
+	}
 }
