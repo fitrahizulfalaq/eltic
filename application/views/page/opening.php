@@ -1,6 +1,6 @@
 <!-- App Header -->
 <div class="appHeader no-border transparent position-absolute">
-	<div class="pageTitle">ELTIC APPS</div>
+	<div class="pageTitle">ILTEC APPS</div>
 </div>
 <!-- * App Header -->
 
@@ -15,7 +15,7 @@
 			<h4>Poin Anda : <?= $this->fungsi->getSaldo($this->session->id) ?></h4>        
 		<?php } ?>
 		<div class="text mb-5">
-			Selamat datang di Aplikasi ELTIC. <br> Anda bisa mempelajari banyak hal melalui beragam media.
+			Selamat datang di Aplikasi ILTEC. <br> Anda bisa mempelajari banyak hal melalui beragam media.
 		</div>
 		
 		<div class="fixed-footer">

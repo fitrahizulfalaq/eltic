@@ -16,7 +16,7 @@
                     <li>Pembayaran dapat dilakukan melaui <b><u>Virtual Account (VA) Bank BCA, BNI, BRI, Mandiri, BSI Syariah, dan Bank Muamalat</b></u>.</li>
                     <li>Pembayaran E-Wallet bisa melaui QRIS melalui <b><u>Scan Aplikasi DANA, LinkAja, OVO, ShopeePay, Jenius, GoPay, dan Mobile Banking QRIS (BNI, BCA, BRI, dll yang mendukung fitur QRIS)</b></u></li>
                     <li>TIDAK ADA BIAYA ADMIN.</li>
-                    <li>Jangan Tutup Laman Pembayaran sebelum selesai melakukan pembayaran (Minimize Chrome / Broser Anda).</li>
+                    <li>Jangan Tutup Laman Pembayaran sebelum selesai melakukan pembayaran (Minimize Chrome / Browser Anda).</li>
                     <li>Jangan mengganti Nama, HP, dan Alamat Email Saat Pembayaran.</li>
                 </ol>
             </p>
