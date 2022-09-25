@@ -27,7 +27,7 @@
 		<?php foreach ($row->result() as $key => $data) {; ?>
 		<div class="section mt-2">
             <div class="card">
-				<a href="<?= base_url("subtema/list/" . $data->id."?kelas=".$kelas) ?>">
+				<a href="<?= base_url("subtema/list/" . $data->id) ?>">
                 <div class="card-body">
 					<h2 class="card-text"><?= $data->deskripsi ?></h2>
                 </div>

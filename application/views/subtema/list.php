@@ -23,6 +23,7 @@
 			<h1>Mata Pelajaran <?= $keterangan ?></h1>
 			<h3>Kelas : <?= $kelas ?></h3>
 		</div>
+		
 		<?php $this->view('message') ?>
 		
 		<?php foreach ($row->result() as $key => $data) {; ?>
