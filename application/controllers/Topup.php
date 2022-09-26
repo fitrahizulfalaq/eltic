@@ -329,5 +329,25 @@ class Topup extends CI_Controller
 	        redirect("topup/konfirmasiwa");	        	
 	    }
 	}
+
+    public function riwayat()
+	{
+		$previllage = 2;
+		check_super_user($this->session->tipe_user, $previllage);
+
+		$data['menu'] = "Riwayat Pembelian Materi";
+		$data['row'] = $this->topup_m->getHistoryTopup();
+		$this->templateadmin->load('template/tanpa-buttom', 'topup/neracaAll', $data);
+	}
+
+    public function paymentHistory()
+	{
+		$previllage = 2;
+		check_super_user($this->session->tipe_user, $previllage);
+
+		$data['menu'] = "Riwayat Top UP";
+		$data['row'] = $this->topup_m->getHistoryPayment();
+		$this->templateadmin->load('template/tanpa-buttom', 'topup/paymentAll', $data);
+	}
 }
 

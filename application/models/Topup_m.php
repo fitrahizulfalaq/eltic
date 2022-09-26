@@ -12,6 +12,29 @@ class Topup_m extends CI_Model
 		$query = $this->db->get();
 		return $query;
 	}
+
+	public function getHistoryTopup($id = null)
+	{
+		$this->db->from('tb_neraca');
+		if ($id != null) {
+			$this->db->where("user_id",$id);
+		}
+		$this->db->where("tipe","debit");
+		$this->db->order_by("created","DESC");
+		$query = $this->db->get();
+		return $query;
+	}
+
+	public function getHistoryPayment($id = null)
+	{
+		$this->db->from('tb_pembayaran');
+		if ($id != null) {
+			$this->db->where("user_id",$id);
+		}
+		$this->db->order_by("SuccessDate","DESC");
+		$query = $this->db->get();
+		return $query;
+	}
     
     function saveTrans($x)
 	{
@@ -24,8 +47,6 @@ class Topup_m extends CI_Model
 		$this->fungsi->sendWA($this->session->hp,$kalimat);
 
 		$this->db->insert('tb_transaksi', $data);
-
-
 	}
 
     function savePayment($url)
