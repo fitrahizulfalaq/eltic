@@ -14,7 +14,6 @@
 			<a href="<?= base_url("topup/confirm?coin=100")?>" class="btn btn-warning btn-block"><ion-icon name="star-outline"></ion-icon> 100 Koin / Rp. 90.000</a>
 			<a href="<?= base_url("topup/confirm?coin=150")?>" class="btn btn-warning btn-block"><ion-icon name="star-outline"></ion-icon> 150 Koin / Rp. 130.000</a>
 		</div>
-
 		
 	</div>
 

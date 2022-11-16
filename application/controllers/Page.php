@@ -52,6 +52,8 @@ class Page extends CI_Controller {
 		$id = $this->uri->segment("3");
 		$this->templateadmin->load('template/dashboard', 'page/menu/'.$id, $data);
 	}
+
+	
 }
 
 
